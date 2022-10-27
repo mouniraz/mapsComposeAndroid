@@ -54,10 +54,23 @@ GoogleMap(
 2. change position marker to Tunisia and run your app
 3. change the zoom degree from 10f to 5f then to 15f, see what happen
 
-##Type of Map
+## Type of Map
 1. change type of Map to satellite using properties of Map
 
+```kotlin
+var properties by remember {
+                    mutableStateOf(MapProperties(mapType = MapType.SATELLITE))
+                }
+                
+                
+                .....
+                GoogleMap(
+                        modifier = Modifier.fillMaxSize(),
+                        cameraPositionState = cameraPositionState,
+                        properties=properties
 
+                    )
+```
 3. test the other type of map: none,normal,hybrid
 
 
