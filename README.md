@@ -51,7 +51,8 @@ GoogleMap(
                         )
                     }          
 ```
-
+2. change position marker to Tunisia and run your app
+3. change the zoom degree from 10f to 5f then to 15f, see what happen
 
 
 
