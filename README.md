@@ -17,4 +17,23 @@ how to create a google maps activity with compose on android
             android:value="AIza......" />
 
 ```
-
+2.Add Internet permission in your manifest
+```kotlin
+   <uses-permission android:name="android.permission.INTERNET" />
+```
+## GoogleMap
+1. Create a composable function called MainMaps, in this fuction we will add GoogleMap like this
+```kotlin
+val singapore = LatLng(1.35, 103.87)
+val cameraPositionState = rememberCameraPositionState {
+    position = CameraPosition.fromLatLngZoom(singapore, 10f)
+}
+GoogleMap(
+    modifier = Modifier.fillMaxSize(),
+    cameraPositionState = cameraPositionState
+)
+```
+2.Run your App on an android Emulator,
+the result must be like this <br>
+<img src="" width="" height=""/>
+## Add Marker 
