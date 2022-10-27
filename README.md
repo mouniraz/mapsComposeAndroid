@@ -72,7 +72,8 @@ var properties by remember {
                     )
 ```
 3. test the other type of map: none,normal,hybrid
-
+## Points of Interests:Poi
+1. on click on Poi display message that contain the name of Poi in a snackbar
 
 
 
