@@ -75,5 +75,13 @@ var properties by remember {
 ## Points of Interests:Poi
 1. on click on Poi display message that contain the name of Poi in a snackbar
 
+```kotlin
+  onPOIClick = {
 
+
+                       Log.d("Tag","POI clicked: ${it.name}")
+
+
+                }
+```
 
